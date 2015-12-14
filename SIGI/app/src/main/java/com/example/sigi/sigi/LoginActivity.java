@@ -180,9 +180,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         // Opens up navigation drawer view
         Intent intent = new Intent(this, MainActivity.class);
-        //EditText editText = (EditText) findViewById(R.id.edit_message);
-        //String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
 
         if (cancel) {

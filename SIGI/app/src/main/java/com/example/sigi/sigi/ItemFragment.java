@@ -13,8 +13,6 @@ import android.view.ViewGroup;
 import com.example.sigi.sigi.dummy.DummyContent;
 import com.example.sigi.sigi.dummy.DummyContent.DummyItem;
 
-import java.util.List;
-
 /**
  * A fragment representing a list of Items.
  * <p/>
@@ -69,7 +67,7 @@ public class ItemFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new ItemFragmentAdapter(DummyContent.ITEMS, mListener));
         }
         return view;
     }
